@@ -14,3 +14,11 @@ func main() {
 	http.HandleFunc("/", greet)
 	http.ListenAndServe(":8080", nil)
 }
+
+func inputvalue() {
+	var name string
+	fmt.Printf("ป้อนชื่อ :")
+	fmt.Scanf("%s", &name)
+
+	fmt.Println("Hello =", name)
+}
